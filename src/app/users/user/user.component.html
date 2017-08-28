@@ -1,0 +1,17 @@
+<div *ngIf="user">
+    <h2>User: {{user.username}}</h2>
+    <div>
+        <label>Benutzername: </label>
+        <input [(ngModel)]="user.username" placeholder="username"/>
+    </div>
+    <div>
+        <label>Email: </label>
+        <input [(ngModel)]="user.email" placeholder="email"/>
+    </div>
+    <div>
+        <label>Passwort: </label>
+        <input [(ngModel)]="user.password" placeholder="password"/>
+    </div>
+    <button (click)="saveToDB()">Save</button>
+    <button (click)="goBackInBrowserHistory()">Back</button>
+</div> 
